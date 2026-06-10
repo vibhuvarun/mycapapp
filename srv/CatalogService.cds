@@ -26,5 +26,5 @@ service CatalogService2 {
 
     entity PurchaseOrders
         as projection on db.PurchaseOrder;
-
+        function getDummy() returns String;
 }
