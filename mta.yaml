@@ -1,0 +1,138 @@
+_schema-version: 3.3.0
+ID: mycapapp
+description: A simple CAP project.
+version: 1.0.0
+modules:
+- name: mycapapp-ui
+  type: nodejs
+  path: app
+  requires:
+  - name: mycapapp-auth
+  - name: srv-api
+    group: destinations
+    properties:
+      forwardAuthToken: true
+      strictSSL: true
+      url: ~(srv-url)
+  parameters:
+    buildpack: nodejs_buildpack
+    instances: 1
+  build-parameters:
+    builder: npm-ci
+- name: mycapapp-srv
+  type: nodejs
+  path: gen/srv
+  requires:
+  - name: mycapapp-db
+  - name: mycapapp-auth
+  provides:
+  - name: srv-api
+    properties:
+      srv-url: ${default-url}
+  parameters:
+    buildpack: nodejs_buildpack
+    instances: 1
+  build-parameters:
+    builder: npm-ci
+- name: mycapapp-db-deployer
+  type: hdb
+  path: gen/db
+  requires:
+  - name: mycapapp-db
+  parameters:
+    buildpack: nodejs_buildpack
+- name: mycapapp-app-content
+  type: com.sap.application.content
+  path: .
+  requires:
+  - name: mycapapp-repo-host
+    parameters:
+      content-target: true
+  build-parameters:
+    build-result: resources
+    requires:
+    - artifacts:
+      - vibhupoimanagepo.zip
+      name: vibhupoimanagepo
+      target-path: resources/
+    - artifacts:
+      - vibhupopoproject2.zip
+      name: vibhupopoproject2
+      target-path: resources/
+- name: vibhupoimanagepo
+  type: html5
+  path: app/managepo
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+- name: vibhupopoproject2
+  type: html5
+  path: app/poproject2
+  build-parameters:
+    build-result: dist
+    builder: custom
+    commands:
+    - npm install
+    - npm run build:cf
+    supported-platforms: []
+resources:
+- name: mycapapp-db
+  type: com.sap.xs.hdi-container
+  parameters:
+    service: hana
+    service-plan: hdi-shared
+- name: mycapapp-auth
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      oauth2-configuration:
+        credential-types:
+        - binding-secret
+        - x509
+      role-collections:
+      - description: generated
+        name: userattributes (mycapapp ${org}-${space})
+        role-template-references:
+        - $XSAPPNAME.userattributes
+      tenant-mode: dedicated
+      xsappname: mycapapp-${org}-${space}
+    path: ./xs-security.json
+    service: xsuaa
+    service-plan: application
+- name: mycapapp-repo-host
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: html5-apps-repo
+    service-name: mycapapp-html5-service
+    service-plan: app-host
+- name: mycapapp-destination-service
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      HTML5Runtime_enabled: false
+      init_data:
+        instance:
+          destinations:
+          - Authentication: NoAuthentication
+            Name: ui5
+            ProxyType: Internet
+            Type: HTTP
+            URL: https://ui5.sap.com
+          existing_destinations_policy: update
+      version: 1.0.0
+    service: destination
+    service-name: mycapapp-destination-service
+    service-plan: lite
+parameters:
+  deploy_mode: html5-repo
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm ci
+    - npx cds build --production

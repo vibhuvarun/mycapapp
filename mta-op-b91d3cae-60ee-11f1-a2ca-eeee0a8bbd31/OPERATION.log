@@ -1,0 +1,1578 @@
+#2026 06 05 14:56:24.940#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#http-nio-0.0.0.0-8080-exec-6#
+[XS2StartProcessListener] Operation ID: b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31#
+#2026 06 05 14:56:24.973#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#http-nio-0.0.0.0-8080-exec-6#
+[XS2StartProcessListener] Process environment: {
+  "SKIP_SSL_VALIDATION" : "false",
+  "FLOWABLE_JOB_EXECUTOR_MAX_THREADS" : "32",
+  "VERSION" : "2.46.0",
+  "BASIC_AUTH_ENABLED" : "true",
+  "FLOWABLE_JOB_EXECUTOR_QUEUE_CAPACITY" : "16",
+  "FLOWABLE_JOB_EXECUTOR_CORE_THREADS" : "8"
+}#
+#2026 06 05 14:56:24.973#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#http-nio-0.0.0.0-8080-exec-6#
+[XS2StartProcessListener] Current user: vibhuvarun27@gmail.com#
+#2026 06 05 14:56:24.973#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#http-nio-0.0.0.0-8080-exec-6#
+[XS2StartProcessListener] Client space: dev#
+#2026 06 05 14:56:24.973#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#http-nio-0.0.0.0-8080-exec-6#
+[XS2StartProcessListener] Client organization: 4c6a92b4trial#
+#2026 06 05 14:56:24.973#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#http-nio-0.0.0.0-8080-exec-6#
+[XS2StartProcessListener] Process variables: {
+  "keepFiles" : false,
+  "skipAppDigestCalculation" : false,
+  "abortOnError" : false,
+  "mtaId" : "mycapapp",
+  "noFailOnMissingPermissions" : false,
+  "isSecurityEnabled" : false,
+  "apiRequestPath" : "https://deploy-service.cf.us10-001.hana.ondemand.com/api/v1/spaces/f3afff57-ac50-4b52-b193-5769ab3b078b/operations",
+  "deleteServiceBrokers" : false,
+  "appArchiveId" : "9070378e-cdb3-4470-92ee-79ad21fa79b7",
+  "isDisposableUserProvidedServiceEnabled" : false,
+  "deleteServiceKeys" : false,
+  "noRestartSubscribedApps" : false,
+  "noStart" : false,
+  "deleteServices" : false
+}#
+#2026 06 05 14:56:25.290#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ValidateDeployParametersStep] Executing task "validateParametersTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:25.290#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ValidateDeployParametersStep] Validating parameters...#
+#2026 06 05 14:56:25.295#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ValidateDeployParametersStep] Size of mtars is 5,723,935 and size of extension descriptors is 0#
+#2026 06 05 14:56:25.330#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ValidateDeployParametersStep] Archive was not split! Total size in bytes: 5,723,935#
+#2026 06 05 14:56:25.330#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ValidateDeployParametersStep] Deploying in org "4c6a92b4trial" and space "dev"#
+#2026 06 05 14:56:25.341#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ValidateDeployParametersStep] Parameters validated#
+#2026 06 05 14:56:25.341#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+Step "Validate Parameters" finished#
+#2026 06 05 14:56:25.441#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+[DeleteRemainingFileParts] Executing task "deleteRemainingFileParts" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:25.443#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+Step "Delete Remaining File Parts" finished#
+#2026 06 05 14:56:25.501#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] Executing task "processArchiveTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:25.502#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] Processing MTA archive...#
+#2026 06 05 14:56:25.502#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] MTA Archive ID: 9070378e-cdb3-4470-92ee-79ad21fa79b7#
+#2026 06 05 14:56:25.877#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] MTA Descriptor length: 1,319#
+#2026 06 05 14:56:25.877#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] MTA Archive Modules: [mycapapp-srv, mycapapp-db-deployer]#
+#2026 06 05 14:56:25.877#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] MTA Archive Requires: []#
+#2026 06 05 14:56:25.877#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] MTA Archive Resources: [mycapapp-auth]#
+#2026 06 05 14:56:25.902#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[XS2ProcessMtaArchiveStep] MTA archive processed#
+#2026 06 05 14:56:25.902#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+Step "Process Archive" finished#
+#2026 06 05 14:56:25.939#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ProcessMtaExtensionDescriptorsStep] Executing task "processExtensionDescriptorsTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:25.940#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ProcessMtaExtensionDescriptorsStep] Processing MTA extension descriptors...#
+#2026 06 05 14:56:25.940#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ProcessMtaExtensionDescriptorsStep] Provided extension descriptors: [ ]#
+#2026 06 05 14:56:25.940#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ProcessMtaExtensionDescriptorsStep] No extension descriptors in use#
+#2026 06 05 14:56:25.940#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ProcessMtaExtensionDescriptorsStep] MTA extension descriptors processed#
+#2026 06 05 14:56:25.940#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+Step "Process Extension Descriptors" finished#
+#2026 06 05 14:56:26.009#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2DetectMtaSchemaVersionStep] Executing task "detectSchemaVersionTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.010#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2DetectMtaSchemaVersionStep] Detecting MTA major schema version...#
+#2026 06 05 14:56:26.012#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2DetectMtaSchemaVersionStep] Detected MTA schema version: "3"#
+#2026 06 05 14:56:26.016#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+Step "Detect Schema Version" finished#
+#2026 06 05 14:56:26.089#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[MergeDescriptorsStep] Executing task "mergeDescriptorsTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.089#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[MergeDescriptorsStep] Validating and merging descriptors...#
+#2026 06 05 14:56:26.091#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[MergeDescriptorsStep] Merged deployment descriptor: {
+  "majorSchemaVersion" : 3,
+  "schemaVersion" : "3.3.0",
+  "id" : "mycapapp",
+  "version" : "1.0.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-srv",
+    "type" : "javascript.nodejs",
+    "path" : "mycapapp-srv",
+    "properties" : { },
+    "parameters" : {
+      "buildpack" : "nodejs_buildpack",
+      "instances" : 1
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 3,
+      "name" : "********",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "srv-api",
+      "isPublic" : false,
+      "properties" : {
+        "srv-url" : "${default-url}"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-srv",
+      "isPublic" : false,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db-deployer",
+    "type" : "com.sap.xs.hdi",
+    "path" : "mycapapp-db-deployer",
+    "properties" : {
+      "EXIT" : 1
+    },
+    "parameters" : {
+      "memory" : "256M",
+      "buildpack" : "nodejs_buildpack",
+      "no-route" : true,
+      "dependency-type" : "hard",
+      "tasks" : [ {
+        "name" : "deploy",
+        "memory" : "256M",
+        "command" : "npm start"
+      } ],
+      "no-start" : true
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db-deployer",
+      "isPublic" : false,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "type" : "managed-service",
+      "service" : "hana",
+      "service-plan" : "hdi-shared"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ],
+    "processedAfter" : [ ]
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "********",
+    "type" : "org.cloudfoundry.managed-service",
+    "properties" : { },
+    "parameters" : {
+      "path" : "./xs-security.json",
+      "service-plan" : "application",
+      "type" : "managed-service",
+      "config" : {
+        "oauth2-configuration" : "********",
+        "role-collections" : [ {
+          "description" : "generated",
+          "name" : "********",
+          "role-template-references" : [ "********" ]
+        } ],
+        "tenant-mode" : "dedicated",
+        "xsappname" : "mycapapp-${org}-${space}"
+      },
+      "service" : "xsuaa"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ],
+    "processedAfter" : [ ]
+  } ],
+  "parameters" : {
+    "enable-parallel-deployments" : true
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+#2026 06 05 14:56:26.092#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[MergeDescriptorsStep] Descriptors validated and merged#
+#2026 06 05 14:56:26.092#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+Step "Merge Descriptors" finished#
+#2026 06 05 14:56:26.128#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Executing task "detectDeployedMtaTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.129#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Detecting deployed MTA...#
+#2026 06 05 14:56:26.194#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Detecting MTA by id mycapapp and namespace null#
+#2026 06 05 14:56:26.194#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Getting applications by metadata label selector "mta_id=8dddd39a7d59d9fa7a483d6583e9c929,!mta_namespace"...#
+#2026 06 05 14:56:26.247#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Getting service instances by metadata label selector "mta_id=8dddd39a7d59d9fa7a483d6583e9c929,!mta_namespace"...#
+#2026 06 05 14:56:26.293#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] No deployed MTA detected - this is initial deployment of MTA with ID "mycapapp"#
+#2026 06 05 14:56:26.305#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Detecting backup mta by id "mycapapp" and namespace "null"#
+#2026 06 05 14:56:26.305#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Getting applications by metadata label selector "mta_id=8dddd39a7d59d9fa7a483d6583e9c929,mta_namespace=b698114a0995e936895b9598a6c19a2c"...#
+#2026 06 05 14:56:26.339#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Getting service instances by metadata label selector "mta_id=8dddd39a7d59d9fa7a483d6583e9c929,mta_namespace=b698114a0995e936895b9598a6c19a2c"...#
+#2026 06 05 14:56:26.374#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+[DetectDeployedMtaStep] Deployed MTA service keys: [ ]#
+#2026 06 05 14:56:26.374#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1098#
+Step "Detect Deployed MTA" finished#
+#2026 06 05 14:56:26.401#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Executing task "collectSystemParametersTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.402#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Collecting system parameters...#
+#2026 06 05 14:56:26.403#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Getting default domain...#
+#2026 06 05 14:56:26.432#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Default domain: cfapps.us10-001.hana.ondemand.com#
+#2026 06 05 14:56:26.432#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Checking for overwriting read-only parameters for mta with id: "mycapapp"#
+#2026 06 05 14:56:26.432#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] No read-only parameters are overwritten#
+#2026 06 05 14:56:26.444#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Descriptor with system parameters: {
+  "majorSchemaVersion" : 3,
+  "schemaVersion" : "3.3.0",
+  "id" : "mycapapp",
+  "version" : "1.0.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-srv",
+    "type" : "javascript.nodejs",
+    "path" : "mycapapp-srv",
+    "properties" : { },
+    "parameters" : {
+      "default-url" : "${protocol}://${default-uri}",
+      "default-app-name" : "mycapapp-srv",
+      "generated-password" : "********",
+      "default-live-url" : "${protocol}://${default-live-uri}",
+      "default-uri" : "${host}.${domain}",
+      "default-instances" : 1,
+      "default-live-host" : "4c6a92b4trial-dev-mycapapp-srv",
+      "instances" : 1,
+      "buildpack" : "nodejs_buildpack",
+      "default-host" : "4c6a92b4trial-dev-mycapapp-srv",
+      "app-name" : "${default-app-name}",
+      "default-live-uri" : "4c6a92b4trial-dev-mycapapp-srv.${domain}",
+      "protocol" : "https",
+      "default-live-app-name" : "mycapapp-srv",
+      "default-live-domain" : "cfapps.us10-001.hana.ondemand.com",
+      "domain" : "${default-domain}",
+      "host" : "${default-host}",
+      "generated-user" : "********"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 3,
+      "name" : "********",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "srv-api",
+      "isPublic" : false,
+      "properties" : {
+        "srv-url" : "${default-url}"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-srv",
+      "isPublic" : false,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db-deployer",
+    "type" : "com.sap.xs.hdi",
+    "path" : "mycapapp-db-deployer",
+    "properties" : {
+      "EXIT" : 1
+    },
+    "parameters" : {
+      "default-url" : "${protocol}://${default-uri}",
+      "default-app-name" : "mycapapp-db-deployer",
+      "generated-password" : "********",
+      "default-live-url" : "${protocol}://${default-live-uri}",
+      "default-uri" : "${host}.${domain}",
+      "memory" : "256M",
+      "default-instances" : 1,
+      "no-route" : true,
+      "default-live-host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+      "instances" : "${default-instances}",
+      "buildpack" : "nodejs_buildpack",
+      "default-host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+      "app-name" : "${default-app-name}",
+      "default-live-uri" : "4c6a92b4trial-dev-mycapapp-db-deployer.${domain}",
+      "protocol" : "https",
+      "default-live-app-name" : "mycapapp-db-deployer",
+      "default-live-domain" : "cfapps.us10-001.hana.ondemand.com",
+      "dependency-type" : "hard",
+      "domain" : "${default-domain}",
+      "host" : "${default-host}",
+      "generated-user" : "********",
+      "tasks" : [ {
+        "name" : "deploy",
+        "memory" : "256M",
+        "command" : "npm start"
+      } ],
+      "no-start" : true
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db-deployer",
+      "isPublic" : false,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "generated-password" : "********",
+      "service-name" : "${default-service-name}",
+      "service-plan" : "hdi-shared",
+      "service" : "hana",
+      "generated-user" : "********",
+      "default-xsappname" : "mycapapp-db",
+      "type" : "managed-service",
+      "default-service-name" : "mycapapp-db",
+      "default-container-name" : "4C6A92B4TRIAL_DEV_MYCAPAPP_DB"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ],
+    "processedAfter" : [ ]
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "********",
+    "type" : "org.cloudfoundry.managed-service",
+    "properties" : { },
+    "parameters" : {
+      "generated-password" : "********",
+      "path" : "./xs-security.json",
+      "service-name" : "${default-service-name}",
+      "service-plan" : "application",
+      "service" : "xsuaa",
+      "generated-user" : "********",
+      "default-xsappname" : "********",
+      "type" : "managed-service",
+      "config" : {
+        "oauth2-configuration" : "********",
+        "role-collections" : [ {
+          "description" : "generated",
+          "name" : "********",
+          "role-template-references" : [ "********" ]
+        } ],
+        "tenant-mode" : "dedicated",
+        "xsappname" : "mycapapp-${org}-${space}"
+      },
+      "default-service-name" : "********",
+      "default-container-name" : "********"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ],
+    "processedAfter" : [ ]
+  } ],
+  "parameters" : {
+    "mta-id" : "mycapapp",
+    "authorization-url" : "********",
+    "org-guid" : "89593111-5784-48ff-a1b9-f2aab5508045",
+    "org" : "4c6a92b4trial",
+    "deploy-target" : "4c6a92b4trial dev",
+    "enable-parallel-deployments" : true,
+    "space" : "dev",
+    "xs-api-url" : "https://api.cf.us10-001.hana.ondemand.com",
+    "deploy-url" : "deploy-service.cfapps.us10-001.hana.ondemand.com",
+    "xs-type" : "CF",
+    "default-domain" : "cfapps.us10-001.hana.ondemand.com",
+    "mta-version" : "1.0.0",
+    "xs-auth-url" : "********",
+    "space-guid" : "f3afff57-ac50-4b52-b193-5769ab3b078b",
+    "user" : "********",
+    "controller-url" : "https://api.cf.us10-001.hana.ondemand.com",
+    "timestamp" : "20260605145624"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+#2026 06 05 14:56:26.444#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Version rule: SAME_HIGHER#
+#2026 06 05 14:56:26.444#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] Detected new MTA version: "1.0.0"#
+#2026 06 05 14:56:26.454#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] MTA accepted for deployment#
+#2026 06 05 14:56:26.454#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[XS2CollectSystemParametersStep] System parameters collected#
+#2026 06 05 14:56:26.455#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+Step "Collect System Parameters" finished#
+#2026 06 05 14:56:26.518#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[ProcessDescriptorStep] Executing task "processDescriptorTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.520#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[ProcessDescriptorStep] Resolving properties and parameters in merged descriptor...#
+#2026 06 05 14:56:26.527#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[ProcessDescriptorStep] Subscriptions: [ ]#
+#2026 06 05 14:56:26.527#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[ProcessDescriptorStep] MTA modules: [mycapapp-srv, mycapapp-db-deployer]#
+#2026 06 05 14:56:26.528#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[ProcessDescriptorStep] Resolved deployment descriptor: {
+  "majorSchemaVersion" : 3,
+  "schemaVersion" : "3.3.0",
+  "id" : "mycapapp",
+  "version" : "1.0.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-srv",
+    "type" : "javascript.nodejs",
+    "path" : "mycapapp-srv",
+    "properties" : { },
+    "parameters" : {
+      "default-url" : "https://4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+      "default-app-name" : "mycapapp-srv",
+      "generated-password" : "********",
+      "default-live-url" : "https://4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+      "default-uri" : "4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+      "default-instances" : 1,
+      "default-live-host" : "4c6a92b4trial-dev-mycapapp-srv",
+      "instances" : 1,
+      "buildpack" : "nodejs_buildpack",
+      "default-host" : "4c6a92b4trial-dev-mycapapp-srv",
+      "app-name" : "mycapapp-srv",
+      "default-live-uri" : "4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+      "protocol" : "https",
+      "default-live-app-name" : "mycapapp-srv",
+      "default-live-domain" : "cfapps.us10-001.hana.ondemand.com",
+      "domain" : "cfapps.us10-001.hana.ondemand.com",
+      "host" : "4c6a92b4trial-dev-mycapapp-srv",
+      "generated-user" : "********"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 3,
+      "name" : "********",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "srv-api",
+      "isPublic" : false,
+      "properties" : {
+        "srv-url" : "https://4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-srv",
+      "isPublic" : false,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db-deployer",
+    "type" : "com.sap.xs.hdi",
+    "path" : "mycapapp-db-deployer",
+    "properties" : {
+      "EXIT" : 1
+    },
+    "parameters" : {
+      "default-url" : "https://4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+      "default-app-name" : "mycapapp-db-deployer",
+      "generated-password" : "********",
+      "default-live-url" : "https://4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+      "default-uri" : "4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+      "memory" : "256M",
+      "default-instances" : 1,
+      "no-route" : true,
+      "default-live-host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+      "instances" : 1,
+      "buildpack" : "nodejs_buildpack",
+      "default-host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+      "app-name" : "mycapapp-db-deployer",
+      "default-live-uri" : "4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+      "protocol" : "https",
+      "default-live-app-name" : "mycapapp-db-deployer",
+      "default-live-domain" : "cfapps.us10-001.hana.ondemand.com",
+      "dependency-type" : "hard",
+      "domain" : "cfapps.us10-001.hana.ondemand.com",
+      "host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+      "generated-user" : "********",
+      "tasks" : [ {
+        "command" : "npm start",
+        "memory" : "256M",
+        "name" : "deploy"
+      } ],
+      "no-start" : true
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 3,
+      "name" : "mycapapp-db-deployer",
+      "isPublic" : false,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "generated-password" : "********",
+      "service-name" : "mycapapp-db",
+      "service-plan" : "hdi-shared",
+      "service" : "hana",
+      "generated-user" : "********",
+      "default-xsappname" : "mycapapp-db",
+      "type" : "managed-service",
+      "default-service-name" : "mycapapp-db",
+      "default-container-name" : "4C6A92B4TRIAL_DEV_MYCAPAPP_DB"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ],
+    "processedAfter" : [ ]
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "********",
+    "type" : "org.cloudfoundry.managed-service",
+    "properties" : { },
+    "parameters" : {
+      "generated-password" : "********",
+      "path" : "./xs-security.json",
+      "service-name" : "********",
+      "service-plan" : "application",
+      "service" : "xsuaa",
+      "generated-user" : "********",
+      "default-xsappname" : "********",
+      "type" : "managed-service",
+      "config" : {
+        "oauth2-configuration" : "********",
+        "role-collections" : [ {
+          "description" : "generated",
+          "name" : "********",
+          "role-template-references" : [ "********" ]
+        } ],
+        "tenant-mode" : "dedicated",
+        "xsappname" : "mycapapp-4c6a92b4trial-dev"
+      },
+      "default-service-name" : "********",
+      "default-container-name" : "********"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ],
+    "processedAfter" : [ ]
+  } ],
+  "parameters" : {
+    "mta-id" : "mycapapp",
+    "authorization-url" : "********",
+    "org-guid" : "89593111-5784-48ff-a1b9-f2aab5508045",
+    "org" : "4c6a92b4trial",
+    "deploy-target" : "4c6a92b4trial dev",
+    "enable-parallel-deployments" : true,
+    "region-primary-domain" : "us10.hana.ondemand.com",
+    "space" : "dev",
+    "region-domain" : "us10-001.hana.ondemand.com",
+    "xs-api-url" : "https://api.cf.us10-001.hana.ondemand.com",
+    "deploy-url" : "deploy-service.cfapps.us10-001.hana.ondemand.com",
+    "xs-type" : "CF",
+    "default-domain" : "cfapps.us10-001.hana.ondemand.com",
+    "mta-version" : "1.0.0",
+    "xs-auth-url" : "********",
+    "space-guid" : "f3afff57-ac50-4b52-b193-5769ab3b078b",
+    "user" : "********",
+    "controller-url" : "https://api.cf.us10-001.hana.ondemand.com",
+    "timestamp" : "20260605145624"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+#2026 06 05 14:56:26.528#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[ProcessDescriptorStep] Merged descriptor properties and parameters resolved#
+#2026 06 05 14:56:26.528#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+Step "Process Descriptor Step" finished#
+#2026 06 05 14:56:26.579#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Executing task "buildDeployModelTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.581#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Service keys defined for content deployment grouped by service name: { }#
+#2026 06 05 14:56:26.581#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Building cloud deployment model...#
+#2026 06 05 14:56:26.581#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] MTA archive modules: [mycapapp-srv, mycapapp-db-deployer]#
+#2026 06 05 14:56:26.581#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Deployed modules: []#
+#2026 06 05 14:56:26.582#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] MTA modules: [mycapapp-srv, mycapapp-db-deployer]#
+#2026 06 05 14:56:26.582#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Service keys to create: {
+  "mycapapp-auth" : "********",
+  "mycapapp-db" : [ ]
+}#
+#2026 06 05 14:56:26.582#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Modules to deploy: [{
+  "majorSchemaVersion" : 3,
+  "name" : "mycapapp-srv",
+  "type" : "javascript.nodejs",
+  "path" : "mycapapp-srv",
+  "properties" : { },
+  "parameters" : {
+    "default-url" : "https://4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+    "default-app-name" : "mycapapp-srv",
+    "generated-password" : "********",
+    "default-live-url" : "https://4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+    "default-uri" : "4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+    "default-instances" : 1,
+    "default-live-host" : "4c6a92b4trial-dev-mycapapp-srv",
+    "instances" : 1,
+    "buildpack" : "nodejs_buildpack",
+    "default-host" : "4c6a92b4trial-dev-mycapapp-srv",
+    "app-name" : "mycapapp-srv",
+    "default-live-uri" : "4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com",
+    "protocol" : "https",
+    "default-live-app-name" : "mycapapp-srv",
+    "default-live-domain" : "cfapps.us10-001.hana.ondemand.com",
+    "dependency-type" : "soft",
+    "domain" : "cfapps.us10-001.hana.ondemand.com",
+    "host" : "4c6a92b4trial-dev-mycapapp-srv",
+    "generated-user" : "********"
+  },
+  "requiredDependencies" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "********",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "providedDependencies" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "srv-api",
+    "isPublic" : false,
+    "properties" : {
+      "srv-url" : "https://4c6a92b4trial-dev-mycapapp-srv.cfapps.us10-001.hana.ondemand.com"
+    },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  }, {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-srv",
+    "isPublic" : false,
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "propertiesMetadata" : {
+    "metadata" : { }
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  },
+  "deployedAfter" : [ ],
+  "hooks" : [ ]
+}, {
+  "majorSchemaVersion" : 3,
+  "name" : "mycapapp-db-deployer",
+  "type" : "com.sap.xs.hdi",
+  "path" : "mycapapp-db-deployer",
+  "properties" : {
+    "EXIT" : 1
+  },
+  "parameters" : {
+    "default-url" : "https://4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+    "default-app-name" : "mycapapp-db-deployer",
+    "generated-password" : "********",
+    "default-live-url" : "https://4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+    "default-uri" : "4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+    "memory" : "256M",
+    "default-instances" : 1,
+    "no-route" : true,
+    "default-live-host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+    "instances" : 1,
+    "buildpack" : "nodejs_buildpack",
+    "default-host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+    "app-name" : "mycapapp-db-deployer",
+    "default-live-uri" : "4c6a92b4trial-dev-mycapapp-db-deployer.cfapps.us10-001.hana.ondemand.com",
+    "protocol" : "https",
+    "default-live-app-name" : "mycapapp-db-deployer",
+    "default-live-domain" : "cfapps.us10-001.hana.ondemand.com",
+    "dependency-type" : "hard",
+    "domain" : "cfapps.us10-001.hana.ondemand.com",
+    "host" : "4c6a92b4trial-dev-mycapapp-db-deployer",
+    "generated-user" : "********",
+    "tasks" : [ {
+      "command" : "npm start",
+      "memory" : "256M",
+      "name" : "deploy"
+    } ],
+    "no-start" : true
+  },
+  "requiredDependencies" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "providedDependencies" : [ {
+    "majorSchemaVersion" : 3,
+    "name" : "mycapapp-db-deployer",
+    "isPublic" : false,
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "propertiesMetadata" : {
+    "metadata" : { }
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  },
+  "deployedAfter" : [ ],
+  "hooks" : [ ]
+}]#
+#2026 06 05 14:56:26.583#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Custom domains: []#
+#2026 06 05 14:56:26.585#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Calculating resource batches...#
+#2026 06 05 14:56:26.585#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Calculating resource batches completed.#
+#2026 06 05 14:56:26.585#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[XS2BuildCloudDeployModelStep] Cloud deployment model built#
+#2026 06 05 14:56:26.585#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+Step "Build Deploy Model" finished#
+#2026 06 05 14:56:26.618#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[BuildCloudUndeployModelStep] Executing task "buildUndeployModelTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.619#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[BuildCloudUndeployModelStep] Building cloud undeployment model...#
+#2026 06 05 14:56:26.620#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[BuildCloudUndeployModelStep] Detecting service keys to delete.#
+#2026 06 05 14:56:26.620#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[BuildCloudUndeployModelStep] No deployed service keys detected!#
+#2026 06 05 14:56:26.620#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[BuildCloudUndeployModelStep] Detected service keys to delete "[]"#
+#2026 06 05 14:56:26.622#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+Step "Build Undeploy Model" finished#
+#2026 06 05 14:56:26.650#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[AddDomainsStep] Executing task "addDomainsTask" of process "b91d63e5-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.651#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[AddDomainsStep] Custom domains: []#
+#2026 06 05 14:56:26.651#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+Step "Add Domains" finished#
+#2026 06 05 14:56:26.784#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ExtractBatchedServicesWithResolvedDynamicParametersStep] Executing task "prepareModulesDeploymentTask" of process "ba29f317-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.784#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ExtractBatchedServicesWithResolvedDynamicParametersStep] Extracting services and resolving dynamic parameters from batch#
+#2026 06 05 14:56:26.785#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+[ExtractBatchedServicesWithResolvedDynamicParametersStep] Services to create: [ {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "mycapapp-db",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "{\"name\":\"mycapapp-db\"}"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "hana",
+  "plan" : "hdi-shared",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "mycapapp-db",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+}, {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "********",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "********"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "xsuaa",
+  "plan" : "application",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "********",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+} ]#
+#2026 06 05 14:56:26.786#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1095#
+Step "Extract Services with Resolved Dynamic parameters from batch" finished#
+#2026 06 05 14:56:26.864#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[CheckServiceOperationStateStep] Executing task "CheckServiceOperationStateTask" of process "ba3d7a5d-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.865#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+[CheckServiceOperationStateStep] Getting service instance "mycapapp-db"...#
+#2026 06 05 14:56:26.886#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1101#
+Step "Check for service operations in Progress" finished#
+#2026 06 05 14:56:26.913#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[DetermineServiceCreateUpdateServiceActionsStep] Executing task "DetermineServiceCreateUpdateActionsTask" of process "ba3d7a5d-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.914#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[DetermineServiceCreateUpdateServiceActionsStep] Processing service "mycapapp-db"...#
+#2026 06 05 14:56:26.918#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[DetermineServiceCreateUpdateServiceActionsStep] Getting service instance "mycapapp-db"...#
+#2026 06 05 14:56:26.958#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[DetermineServiceCreateUpdateServiceActionsStep] Service should be created#
+#2026 06 05 14:56:26.960#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+Step "Determine update actions" finished#
+#2026 06 05 14:56:26.996#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "ba3d7a5d-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:26.997#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[CreateServiceStep] Creating service "mycapapp-db" from MTA resource "mycapapp-db"...#
+#2026 06 05 14:56:27.001#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[CreateServiceStep] Creating service instance: {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "mycapapp-db",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "{\"name\":\"mycapapp-db\"}"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "hana",
+  "plan" : "hdi-shared",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "mycapapp-db",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+}#
+#2026 06 05 14:56:27.255#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[CreateServiceStep] Service "mycapapp-db" created#
+#2026 06 05 14:56:27.255#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+[CreateServiceStep] Triggered service operations: {
+  "mycapapp-db" : "CREATE"
+}#
+#2026 06 05 14:56:27.256#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1097#
+Step "Create" finished#
+#2026 06 05 14:56:28.395#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-811#
+[CheckServiceOperationStateStep] Executing task "CheckServiceOperationStateTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:28.470#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-811#
+[CheckServiceOperationStateStep] Getting service instance "mycapapp-auth"...#
+#2026 06 05 14:56:28.518#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-811#
+Step "Check for service operations in Progress" finished#
+#2026 06 05 14:56:28.600#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-812#
+[DetermineServiceCreateUpdateServiceActionsStep] Executing task "DetermineServiceCreateUpdateActionsTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:28.606#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-812#
+[DetermineServiceCreateUpdateServiceActionsStep] Processing service "mycapapp-auth"...#
+#2026 06 05 14:56:28.620#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-812#
+[DetermineServiceCreateUpdateServiceActionsStep] Getting service instance "mycapapp-auth"...#
+#2026 06 05 14:56:28.657#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-812#
+[DetermineServiceCreateUpdateServiceActionsStep] Setting service "mycapapp-auth" parameters from "xs-security.json"#
+#2026 06 05 14:56:28.721#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-812#
+[DetermineServiceCreateUpdateServiceActionsStep] Service should be created#
+#2026 06 05 14:56:28.731#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-812#
+Step "Determine update actions" finished#
+#2026 06 05 14:56:28.885#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-805#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:28.893#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-805#
+[CreateServiceStep] Creating service "mycapapp-auth" from MTA resource "mycapapp-auth"...#
+#2026 06 05 14:56:28.908#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-805#
+[CreateServiceStep] Creating service instance: {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "********",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "********"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "xsuaa",
+  "plan" : "application",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "********",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+}#
+#2026 06 05 14:56:29.277#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-805#
+[CreateServiceStep] Service "mycapapp-auth" created#
+#2026 06 05 14:56:29.277#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-805#
+[CreateServiceStep] Triggered service operations: {
+  "mycapapp-auth" : "CREATE"
+}#
+#2026 06 05 14:56:29.280#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-805#
+Step "Create" finished#
+#2026 06 05 14:56:34.862#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:34.865#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Polling service operations...#
+#2026 06 05 14:56:34.869#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Getting service instance "mycapapp-auth"...#
+#2026 06 05 14:56:35.008#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Last operation for service "mycapapp-auth": {
+  "type" : "CREATE",
+  "description" : "Error creating application null (Error parsing xs-security.json data: Unrecognized field \"oauth2-configuration\" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: \"scope-references\", \"attributeReferences\", \"default-role-name\", \"attribute-references\", \"attributeReferencesFromNames\", \"name\", \"appId\", \"description\", \"scopeReferences\")\n at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp[\"role-templates\"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate[\"oauth2-configuration\"]))",
+  "state" : "FAILED"
+}#
+#2026 06 05 14:56:35.009#Z#ERROR#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+Exception caught#
+org.cloudfoundry.multiapps.common.SLException: Error monitoring creation or update of services: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"])) 
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.processException(SyncFlowableStep.java:156)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:28)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStep(AsyncFlowableStep.java:15)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:82)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:72)
+	at org.cloudfoundry.multiapps.controller.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:14)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:72)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:32)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:177)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:298)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:175)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:125)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:88)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.lambda$new$0(AbstractEngineConfiguration.java:198)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:189)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:128)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:80)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:26)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:105)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:57)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.handleTransactionalJob(ExecuteAsyncRunnable.java:177)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:146)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.runInternally(ExecuteAsyncRunnable.java:122)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:96)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.cloudfoundry.multiapps.common.SLException: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"]))
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.handleFailedState(PollServiceCreateOrUpdateOperationsExecution.java:96)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.reportServiceState(PollServiceCreateOrUpdateOperationsExecution.java:78)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.reportDetailedServicesStates(PollServiceOperationsExecution.java:124)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.execute(PollServiceOperationsExecution.java:59)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:25)
+	... 33 more
+#2026 06 05 14:56:35.025#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+Step "Create" finished#
+#2026 06 05 14:56:34.806#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "ba3d7a5d-60ee-11f1-a2ca-eeee0a8bbd31"...#
+#2026 06 05 14:56:34.807#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] Polling service operations...#
+#2026 06 05 14:56:34.877#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] Getting service instance "mycapapp-db"...#
+#2026 06 05 14:56:35.021#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] Last operation for service "mycapapp-db": {
+  "type" : "CREATE",
+  "state" : "SUCCEEDED"
+}#
+#2026 06 05 14:56:35.021#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] Service "mycapapp-db" created#
+#2026 06 05 14:56:35.021#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] 1 of 1 done#
+#2026 06 05 14:56:35.029#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+[CreateServiceStep] Remaining services to poll: [ ]#
+#2026 06 05 14:56:35.031#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1092#
+Step "Create" finished#
+#2026 06 05 14:56:37.319#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:37.387#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Creating service "mycapapp-auth" from MTA resource "mycapapp-auth"...#
+#2026 06 05 14:56:37.392#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Creating service instance: {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "********",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "********"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "xsuaa",
+  "plan" : "application",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "********",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+}#
+#2026 06 05 14:56:37.683#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Service "mycapapp-auth" created#
+#2026 06 05 14:56:37.683#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+[CreateServiceStep] Triggered service operations: {
+  "mycapapp-auth" : "CREATE"
+}#
+#2026 06 05 14:56:37.686#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1104#
+Step "Create" finished#
+#2026 06 05 14:56:45.242#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:45.244#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+[CreateServiceStep] Polling service operations...#
+#2026 06 05 14:56:45.247#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+[CreateServiceStep] Getting service instance "mycapapp-auth"...#
+#2026 06 05 14:56:45.382#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+[CreateServiceStep] Last operation for service "mycapapp-auth": {
+  "type" : "CREATE",
+  "description" : "Error creating application null (Error parsing xs-security.json data: Unrecognized field \"oauth2-configuration\" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: \"scope-references\", \"attributeReferences\", \"default-role-name\", \"attribute-references\", \"attributeReferencesFromNames\", \"name\", \"appId\", \"description\", \"scopeReferences\")\n at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp[\"role-templates\"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate[\"oauth2-configuration\"]))",
+  "state" : "FAILED"
+}#
+#2026 06 05 14:56:45.383#Z#ERROR#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+Exception caught#
+org.cloudfoundry.multiapps.common.SLException: Error monitoring creation or update of services: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"])) 
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.processException(SyncFlowableStep.java:156)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:28)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStep(AsyncFlowableStep.java:15)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:82)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:72)
+	at org.cloudfoundry.multiapps.controller.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:14)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:72)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:32)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:177)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:298)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:175)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:125)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:88)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.lambda$new$0(AbstractEngineConfiguration.java:198)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:189)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:128)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:80)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:26)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:105)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:57)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.handleTransactionalJob(ExecuteAsyncRunnable.java:177)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:146)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.runInternally(ExecuteAsyncRunnable.java:122)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:96)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.cloudfoundry.multiapps.common.SLException: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"]))
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.handleFailedState(PollServiceCreateOrUpdateOperationsExecution.java:96)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.reportServiceState(PollServiceCreateOrUpdateOperationsExecution.java:78)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.reportDetailedServicesStates(PollServiceOperationsExecution.java:124)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.execute(PollServiceOperationsExecution.java:59)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:25)
+	... 33 more
+#2026 06 05 14:56:45.391#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1102#
+Step "Create" finished#
+#2026 06 05 14:56:46.536#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1116#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:46.538#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1116#
+[CreateServiceStep] Creating service "mycapapp-auth" from MTA resource "mycapapp-auth"...#
+#2026 06 05 14:56:46.543#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1116#
+[CreateServiceStep] Creating service instance: {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "********",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "********"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "xsuaa",
+  "plan" : "application",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "********",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+}#
+#2026 06 05 14:56:46.837#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1116#
+[CreateServiceStep] Service "mycapapp-auth" created#
+#2026 06 05 14:56:46.837#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1116#
+[CreateServiceStep] Triggered service operations: {
+  "mycapapp-auth" : "CREATE"
+}#
+#2026 06 05 14:56:46.841#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1116#
+Step "Create" finished#
+#2026 06 05 14:56:55.158#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-822#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:55.159#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-822#
+[CreateServiceStep] Polling service operations...#
+#2026 06 05 14:56:55.164#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-822#
+[CreateServiceStep] Getting service instance "mycapapp-auth"...#
+#2026 06 05 14:56:55.304#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-822#
+[CreateServiceStep] Last operation for service "mycapapp-auth": {
+  "type" : "CREATE",
+  "description" : "Error creating application null (Error parsing xs-security.json data: Unrecognized field \"oauth2-configuration\" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: \"scope-references\", \"attributeReferences\", \"default-role-name\", \"attribute-references\", \"attributeReferencesFromNames\", \"name\", \"appId\", \"description\", \"scopeReferences\")\n at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp[\"role-templates\"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate[\"oauth2-configuration\"]))",
+  "state" : "FAILED"
+}#
+#2026 06 05 14:56:55.304#Z#ERROR#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-822#
+Exception caught#
+org.cloudfoundry.multiapps.common.SLException: Error monitoring creation or update of services: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"])) 
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.processException(SyncFlowableStep.java:156)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:28)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStep(AsyncFlowableStep.java:15)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:82)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:72)
+	at org.cloudfoundry.multiapps.controller.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:14)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:72)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:32)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:177)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:298)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:175)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:125)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:88)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.lambda$new$0(AbstractEngineConfiguration.java:198)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:189)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:128)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:80)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:26)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:105)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:57)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.handleTransactionalJob(ExecuteAsyncRunnable.java:177)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:146)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.runInternally(ExecuteAsyncRunnable.java:122)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:96)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.cloudfoundry.multiapps.common.SLException: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"]))
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.handleFailedState(PollServiceCreateOrUpdateOperationsExecution.java:96)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.reportServiceState(PollServiceCreateOrUpdateOperationsExecution.java:78)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.reportDetailedServicesStates(PollServiceOperationsExecution.java:124)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.execute(PollServiceOperationsExecution.java:59)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:25)
+	... 33 more
+#2026 06 05 14:56:55.316#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-822#
+Step "Create" finished#
+#2026 06 05 14:56:55.788#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1121#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:56:55.791#Z#INFO#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1121#
+[CreateServiceStep] Creating service "mycapapp-auth" from MTA resource "mycapapp-auth"...#
+#2026 06 05 14:56:55.797#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1121#
+[CreateServiceStep] Creating service instance: {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "********",
+  "v3Metadata" : {
+    "annotations" : {
+      "mta_id" : "mycapapp",
+      "mta_version" : "1.0.0",
+      "mta_resource" : "********"
+    },
+    "labels" : {
+      "mta_id" : "8dddd39a7d59d9fa7a483d6583e9c929"
+    }
+  },
+  "label" : "xsuaa",
+  "plan" : "application",
+  "credentials" : "********",
+  "tags" : [ ],
+  "type" : "managed",
+  "resourceName" : "********",
+  "shouldSkipParametersUpdate" : false,
+  "shouldSkipPlanUpdate" : false,
+  "shouldSkipTagsUpdate" : false,
+  "shouldSkipSyslogUrlUpdate" : false
+}#
+#2026 06 05 14:56:56.088#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1121#
+[CreateServiceStep] Service "mycapapp-auth" created#
+#2026 06 05 14:56:56.088#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1121#
+[CreateServiceStep] Triggered service operations: {
+  "mycapapp-auth" : "CREATE"
+}#
+#2026 06 05 14:56:56.092#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1121#
+Step "Create" finished#
+#2026 06 05 14:57:05.392#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1120#
+[CreateServiceStep] Executing task "CreateServiceTask" of process "bb240a0b-60ee-11f1-8a95-eeee0a9fba85"...#
+#2026 06 05 14:57:05.393#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1120#
+[CreateServiceStep] Polling service operations...#
+#2026 06 05 14:57:05.475#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1120#
+[CreateServiceStep] Getting service instance "mycapapp-auth"...#
+#2026 06 05 14:57:05.648#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1120#
+[CreateServiceStep] Last operation for service "mycapapp-auth": {
+  "type" : "CREATE",
+  "description" : "Error creating application null (Error parsing xs-security.json data: Unrecognized field \"oauth2-configuration\" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: \"scope-references\", \"attributeReferences\", \"default-role-name\", \"attribute-references\", \"attributeReferencesFromNames\", \"name\", \"appId\", \"description\", \"scopeReferences\")\n at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp[\"role-templates\"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate[\"oauth2-configuration\"]))",
+  "state" : "FAILED"
+}#
+#2026 06 05 14:57:05.648#Z#ERROR#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1120#
+Exception caught#
+org.cloudfoundry.multiapps.common.SLException: Error monitoring creation or update of services: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"])) 
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.processException(SyncFlowableStep.java:156)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:28)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStep(AsyncFlowableStep.java:15)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:82)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:72)
+	at org.cloudfoundry.multiapps.controller.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:14)
+	at org.cloudfoundry.multiapps.controller.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:72)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:32)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:177)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:298)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:175)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:125)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:88)
+	at org.flowable.common.engine.impl.AbstractEngineConfiguration.lambda$new$0(AbstractEngineConfiguration.java:198)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:189)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:128)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:80)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:26)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:105)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:57)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:57)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.handleTransactionalJob(ExecuteAsyncRunnable.java:177)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:146)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.runInternally(ExecuteAsyncRunnable.java:122)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:96)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+Caused by: org.cloudfoundry.multiapps.common.SLException: Error creating service "mycapapp-auth" from offering "xsuaa" and plan "application": Error creating application null (Error parsing xs-security.json data: Unrecognized field "oauth2-configuration" (class com.sap.xs2.security.authorization.XSRoleTemplate), not marked as ignorable (9 known properties: "scope-references", "attributeReferences", "default-role-name", "attribute-references", "attributeReferencesFromNames", "name", "appId", "description", "scopeReferences")
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 1, column: 723] (through reference chain: com.sap.xs2.security.authorization.XSApp["role-templates"]->java.util.ArrayList[2]->com.sap.xs2.security.authorization.XSRoleTemplate["oauth2-configuration"]))
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.handleFailedState(PollServiceCreateOrUpdateOperationsExecution.java:96)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceCreateOrUpdateOperationsExecution.reportServiceState(PollServiceCreateOrUpdateOperationsExecution.java:78)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.reportDetailedServicesStates(PollServiceOperationsExecution.java:124)
+	at org.cloudfoundry.multiapps.controller.process.steps.PollServiceOperationsExecution.execute(PollServiceOperationsExecution.java:59)
+	at org.cloudfoundry.multiapps.controller.process.steps.AsyncFlowableStep.executeStepExecution(AsyncFlowableStep.java:25)
+	... 33 more
+#2026 06 05 14:57:05.658#Z#DEBUG#b91d3cae-60ee-11f1-a2ca-eeee0a8bbd31.OPERATION#flowable-async-job-executor-thread-1120#
+Step "Create" finished#

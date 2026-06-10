@@ -1,0 +1,21 @@
+{
+    "welcomeFile": "/webapp/",
+    "authenticationMethod":"route",
+    "sessionTimeout":100,
+    "routes":[
+        {
+            "source":"^/webapp/(.*)",
+            "target":"$1",
+            "loclaDir": "/webapp",
+            "authenticationType":"xsuaa"
+        },
+         {
+            "source":"^(.*)$",
+            "destination":"srv-api",
+            "authenticationType":"xsuaa"
+        }
+
+    ]
+
+
+}

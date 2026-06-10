@@ -1,0 +1,6 @@
+NODE_KEY,name,email,phone,Address_GUID_NODE_KEY
+GUID_BP001,ABC Technologies,contact@abctech.com,9876543210,GUID_ADDR001
+GUID_BP002,Global Traders,info@globaltraders.com,9123456780,GUID_ADDR002
+GUID_BP003,NextGen Solutions,support@nextgen.com,9988776655,GUID_ADDR003
+GUID_BP004,Prime Enterprises,hello@prime.com,9012345678,GUID_ADDR004
+GUID_BP005,Skyline Pvt Ltd,admin@skyline.com,9090909090,GUID_ADDR005  

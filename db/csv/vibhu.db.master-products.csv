@@ -1,0 +1,6 @@
+NODE_KEY,PRODUCT_ID,CATEGORY,DESCRIPTION,name,price
+GUID_PROD001,P1001,Electronics,Laptop for office use,Dell Latitude,65000
+GUID_PROD002,P1002,Electronics,Wireless mouse,Logitech Mouse,1200
+GUID_PROD003,P1003,Furniture,Office chair,Ergo Chair,8500
+GUID_PROD004,P1004,Accessories,USB Keyboard,Mechanical Keyboard,3500
+GUID_PROD005,P1005,Stationery,Notebook pack,A4 Notebook,450

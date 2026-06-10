@@ -1,0 +1,6 @@
+NODE_KEY,firstName,lastName,email,sex,phoneNumber,CURRENCY,salaryAmount,department
+GUID_EMP001,Ravi,Kumar,ravi.kumar@gmail.com,M,9876501234,INR,50000,IT
+GUID_EMP002,Priya,Sharma,priya.sharma@gmail.com,F,9123409876,INR,60000,HR
+GUID_EMP003,Arjun,Reddy,arjun.reddy@gmail.com,M,9988771122,INR,55000,Finance
+GUID_EMP004,Sneha,Iyer,sneha.iyer@gmail.com,F,9011223344,INR,70000,Sales
+GUID_EMP005,Karan,Patel,karan.patel@gmail.com,M,9090901234,INR,65000,Operations

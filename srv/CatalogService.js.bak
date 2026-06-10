@@ -1,0 +1,22 @@
+// module.exports = cds.service.impl(async function () {
+// //it will look into CatalogService.cds file and find the entity EmployeeSet and then it will create a variable EmployeeSet which we can use to perform operations on EmployeeSet entity
+//     const { EmployeeSet } = this.entities;
+
+//     this.on(['CREATE', 'UPDATE'], EmployeeSet, (req) => {
+
+//         console.log('aa gaya', JSON.stringify(req.data));
+
+//         const jsonData = req.data;
+
+//         if (jsonData.hasOwnProperty('salaryAmount')) {
+
+//             const salary = parseFloat(jsonData.salaryAmount);
+
+//             if (salary > 1000000) {
+//                 req.error(500, 'Salary should not be greater than 1000000');
+//             }
+//         }
+
+//     });
+
+// });

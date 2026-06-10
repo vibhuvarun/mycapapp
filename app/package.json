@@ -1,0 +1,19 @@
+{
+  "name": "mycapapp-ui",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "capapp",
+    "vibhu",
+    "approuter"
+  ],
+  "author": "vibhu",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@sap/approuter": "^22.0.1"
+  }
+}

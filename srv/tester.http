@@ -1,0 +1,56 @@
+###Get the service document
+http://localhost:4004/odata/v4/CatalogService
+Authorization: Basic vibhu:
+
+###Get call to show metadata of service 
+http://localhost:4004/odata/v4/CatalogService/$metadata
+
+###Get call to all employees 
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Authorization: Basic vibhu:
+
+###Get call to all employees -$count
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet/$count
+
+###Get call with pegination -$top and $skip //pegination is like youtube buffering it is used to load data in chunks instead of loading all data at once
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$top=2&$skip=2
+
+###select few fields -$select
+http://localhost:4004/odata/v4/CatalogService/EmployeeSet?$select=firstName,lastName
+
+###POST to create new employee
+POST http://localhost:4004/odata/v4/CatalogService/EmployeeSet
+Authorization: Basic vibhu:
+Content-Type: application/json
+
+    {
+      "NODE_KEY": "GUID_EMP012",
+      "firstName": "varun",
+      "lastName": "Reddy",
+      "email": "raghav.reddy@gmail.com",
+      "sex": "M",
+      "phoneNumber": "9888771122",
+      "CURRENCY": "INR",
+      "salaryAmount": 1000001,
+      "department": "Finance"
+    }
+
+###PATCH to update existing employee data
+PATCH http://localhost:4004/odata/v4/CatalogService/EmployeeSet('GUID_EMP011')
+Authorization: Basic vibhu:
+Content-Type: application/json
+
+ 
+    {
+      "NODE_KEY": "GUID_EMP012",
+      "firstName": "varun",
+      "lastName": "Reddy",
+      "email": "raghav.reddy@gmail.com",
+      "sex": "M",
+      "phoneNumber": "9888771122",
+      "CURRENCY": "INR",
+      "salaryAmount": 1000001,
+      "department": "Finance"
+    }
+###DELETE to delete existing employee data
+DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSet('GUID_EMP011')
