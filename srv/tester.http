@@ -54,3 +54,5 @@ Content-Type: application/json
     }
 ###DELETE to delete existing employee data
 DELETE http://localhost:4004/odata/v4/CatalogService/EmployeeSet('GUID_EMP011')
+
+#Test sap btp ci pipeline
