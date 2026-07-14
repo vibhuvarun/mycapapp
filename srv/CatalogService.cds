@@ -25,6 +25,12 @@ using { vibhuvarun2.db as db } from '../db/data-models';
 service CatalogService2 {
 
     entity PurchaseOrders
+    @(restrict:[
+        {
+          grant: 'Display',
+          where: 'createdBy = $user.id'
+        }
+    ])
         as projection on db.PurchaseOrder;
         function getDummy() returns String;
 }

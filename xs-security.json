@@ -1,6 +1,7 @@
 {
   "xsappname": "mycapapp",
   "tenant-mode": "dedicated",
+  "xsenableasyncservice": true,
   "scopes": [
     {
       "name": "$XSAPPNAME.Display",
@@ -18,11 +19,13 @@
   "attributes": [
     {
       "name": "country",
-      "description": "Country attribute"
+      "description": "Country attribute",
+      "valueType": "string"
     },
     {
       "name": "city",
-      "description": "City attribute"
+      "description": "City attribute",
+      "valueType": "string"
     }
   ],
   "role-templates": [
@@ -61,14 +64,13 @@
             "*"
           ]
         }
-      ],
-      "oauth2-configuration": {
-        "token-validity": 3600,
-        "redirect-uris": [
-          "https://*.cfapps.us10-001.hana.ondemand.com/login/callback/"
-        ]
-      },
-      "xsenableasyncservice": "true"
+      ]
     }
-  ]
+  ],
+  "oauth2-configuration": {
+    "token-validity": 3600,
+    "redirect-uris": [
+      "https://*.cfapps.us10-001.hana.ondemand.com/login/callback/"
+    ]
+  }
 }

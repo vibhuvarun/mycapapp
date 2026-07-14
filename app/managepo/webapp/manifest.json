@@ -1,7 +1,7 @@
 {
-  "_version": "1.85.0",
+  "_version": "1.86.0",
   "sap.app": {
-    "id": "vibhu.po.poproject2",
+    "id": "vibhu.po.managepo",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
@@ -12,8 +12,8 @@
     "resources": "resources.json",
     "sourceTemplate": {
       "id": "@sap/generator-fiori:lrop",
-      "version": "1.25.0",
-      "toolsId": "770ae674-d07a-430e-b08e-442bc286b40f"
+      "version": "1.28.0",
+      "toolsId": "d9850cf4-d354-40c3-b0dd-d12e86a3ddaa"
     },
     "dataSources": {
       "mainService": {
@@ -45,7 +45,7 @@
   "sap.ui5": {
     "flexEnabled": true,
     "dependencies": {
-      "minUI5Version": "1.148.1",
+      "minUI5Version": "1.150.0",
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
@@ -60,7 +60,7 @@
       "i18n": {
         "type": "sap.ui.model.resource.ResourceModel",
         "settings": {
-          "bundleName": "vibhu.po.poproject2.i18n.i18n"
+          "bundleName": "vibhu.po.managepo.i18n.i18n"
         }
       },
       "": {

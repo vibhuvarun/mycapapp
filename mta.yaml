@@ -12,8 +12,9 @@ modules:
     group: destinations
     properties:
       forwardAuthToken: true
+      name: srv-api
       strictSSL: true
-      url: ~(srv-url)
+      url: ~{srv-url}
   parameters:
     buildpack: nodejs_buildpack
     instances: 1
@@ -41,6 +42,32 @@ modules:
   - name: mycapapp-db
   parameters:
     buildpack: nodejs_buildpack
+- name: mycapapp
+  type: approuter.nodejs
+  path: app/
+  requires:
+  - name: srv-api
+    group: destinations
+    properties:
+      forwardAuthToken: true
+      name: srv-api
+      url: ~{srv-url}
+  - name: mycapapp-auth
+  - name: mycapapp-destination-service
+    group: destinations
+    properties:
+      forwardAuthToken: false
+      name: ui5
+      url: https://ui5.sap.com
+  provides:
+  - name: app-api
+    properties:
+      app-protocol: ${protocol}
+      app-uri: ${default-uri}
+  parameters:
+    disk-quota: 256M
+    keep-existing-routes: true
+    memory: 256M
 - name: mycapapp-app-content
   type: com.sap.application.content
   path: .
@@ -52,26 +79,12 @@ modules:
     build-result: resources
     requires:
     - artifacts:
-      - vibhupoimanagepo.zip
-      name: vibhupoimanagepo
+      - vibhupomanagepo.zip
+      name: vibhupomanagepo
       target-path: resources/
-    - artifacts:
-      - vibhupopoproject2.zip
-      name: vibhupopoproject2
-      target-path: resources/
-- name: vibhupoimanagepo
+- name: vibhupomanagepo
   type: html5
   path: app/managepo
-  build-parameters:
-    build-result: dist
-    builder: custom
-    commands:
-    - npm install
-    - npm run build:cf
-    supported-platforms: []
-- name: vibhupopoproject2
-  type: html5
-  path: app/poproject2
   build-parameters:
     build-result: dist
     builder: custom
@@ -93,16 +106,15 @@ resources:
         credential-types:
         - binding-secret
         - x509
-      role-collections:
-      - description: generated
-        name: userattributes (mycapapp ${org}-${space})
-        role-template-references:
-        - $XSAPPNAME.userattributes
+        redirect-uris:
+        - https://*~{app-api/app-uri}/**
       tenant-mode: dedicated
       xsappname: mycapapp-${org}-${space}
     path: ./xs-security.json
     service: xsuaa
     service-plan: application
+  requires:
+  - name: app-api
 - name: mycapapp-repo-host
   type: org.cloudfoundry.managed-service
   parameters:

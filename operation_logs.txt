@@ -1,0 +1,9 @@
+Downloading logs of multi-target app operation with ID f7011ed9-7e82-11f1-b477-eeee0a8b46dc in org 4c6a92b4trial / space dev as vibhuvarun27@gmail.com...
+OK
+Saving logs to /home/user/projects/mycapapp/mta-op-f7011ed9-7e82-11f1-b477-eeee0a8b46dc...
+  mycapapp-srv.log
+  OPERATION.log
+  mycapapp-db-deployer.log
+  mycapapp.log
+  mycapapp-ui.log
+OK

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/@sap/approuter/approuter.js"
   },
   "keywords": [
     "capapp",
@@ -12,8 +13,8 @@
   ],
   "author": "vibhu",
   "license": "ISC",
-  "description": "",
   "dependencies": {
-    "@sap/approuter": "^22.0.1"
-  }
+    "@sap/approuter": "^22.0.3"
+  },
+  "description": ""
 }

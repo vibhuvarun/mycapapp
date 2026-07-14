@@ -3,7 +3,7 @@ sap.ui.define(
     function (Component) {
         "use strict";
 
-        return Component.extend("vibhu.po.poproject2.Component", {
+        return Component.extend("vibhu.po.managepo.Component", {
             metadata: {
                 manifest: "json"
             }

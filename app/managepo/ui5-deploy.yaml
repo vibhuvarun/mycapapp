@@ -2,11 +2,8 @@
 
 specVersion: "4.0"
 metadata:
-  name: vibhu.po.poproject2
+  name: vibhu.po.managepo
 type: application
-resources:
-  configuration:
-    propertiesFileSourceEncoding: UTF-8
 builder:
   resources:
     excludes:
@@ -16,7 +13,10 @@ builder:
     - name: ui5-task-zipper
       afterTask: generateCachebusterInfo
       configuration:
-        archiveName: vibhupopoproject2
+        archiveName: vibhupomanagepo
         relativePaths: true
         additionalFiles:
           - xs-app.json
+resources:
+  configuration:
+    propertiesFileSourceEncoding: UTF-8

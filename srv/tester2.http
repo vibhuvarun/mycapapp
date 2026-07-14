@@ -1,0 +1,66 @@
+### Get the service document
+http://localhost:4004c
+Authorization: Basic vibhu:
+
+### Get metadata of CatalogService2
+http://localhost:4004/odata/v4/CatalogService/$metadata
+
+### Get all Purchase Orders
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders
+Authorization: Basic vibhu:
+
+### Get count of Purchase Orders
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders/$count
+
+### Pagination - $top and $skip
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$top=5&$skip=10
+
+### Select specific fields
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$select=PurchasingDocument,Item,ShortText,Material,NetOrderValue
+
+### Filter by CompanyCode
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$filter=CompanyCode eq '1000'
+
+### Filter by Plant and Material
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$filter=Plant eq '1010' and Material eq 'MAT-001'
+
+### Get single Purchase Order by composite key (PurchasingDocument + Item)
+http://localhost:4004/odata/v4/CatalogService/PurchaseOrders(PurchasingDocument='4500000123',Item='00010')
+Authorization: Basic vibhu:
+
+### Call the custom function getDummy
+http://localhost:4004/odata/v4/CatalogService/getDummy()
+
+### POST to create new Purchase Order
+POST http://localhost:4004/odata/v4/CatalogService/PurchaseOrders
+Authorization: Basic vibhu:
+Content-Type: application/json
+
+{
+  "PurchasingDocument": "4500000999",
+  "Item": "00010",
+  "DocumentItem": "10",
+  "ShortText": "Test Material Order",
+  "Material": "MAT-TEST01",
+  "CompanyCode": "1000",
+  "Plant": "1010",
+  "OrderQuantity": "100",
+  "OrderUnit": "EA",
+  "NetOrderPrice": "250.00",
+  "NetOrderValue": "25000.00"
+}
+
+### PATCH to update existing Purchase Order
+PATCH http://localhost:4004/odata/v4/CatalogService2/PurchaseOrders(PurchasingDocument='4500000999',Item='00010')
+Authorization: Basic vibhu:
+Content-Type: application/json
+
+{
+  "ShortText": "Updated Test Material Order",
+  "NetOrderValue": "27500.00"
+}
+
+### DELETE existing Purchase Order
+DELETE http://localhost:4004/odata/v4/CatalogService2/PurchaseOrders(PurchasingDocument='4500000999',Item='00010')
+Authorization: Basic vibhu:
+##test sap btp ci pipeline

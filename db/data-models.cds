@@ -74,114 +74,116 @@
 
 namespace vibhuvarun2.db;
 
-entity PurchaseOrder {
+using { managed } from '@sap/cds/common';
+
+entity PurchaseOrder : managed {
 
     key PurchasingDocument      : String(20) @title : '{i18n>XLBL_PURDOC}';
+    key Item                    : String(10) @title : '{i18n>XLBL_ITEM}';
 
-    key Item                         : String(10) @title : '{i18n>XLBL_ITEM}';
     DocumentItem                : String(10) @title : '{i18n>XLBL_DOCITEM}';
-    LastChangedon              : String(50) @title : '{i18n>XLBL_LASTCHANGED}';
-    ShortText                  : String(255) @title : '{i18n>XLBL_SHORTTEXT}';
-    Material                     : String(40) @title : '{i18n>XLBL_MATERIAL}';
+    LastChangedon                : String(50) @title : '{i18n>XLBL_LASTCHANGED}';
+    ShortText                   : String(255) @title : '{i18n>XLBL_SHORTTEXT}';
+    Material                    : String(40) @title : '{i18n>XLBL_MATERIAL}';
     Material1                   : String(40) @title : '{i18n>XLBL_MATERIAL1}';
     CompanyCode                 : String(10) @title : '{i18n>XLBL_COMPCODE}';
-    Plant                        : String(10) @title : '{i18n>XLBL_PLANT}';
-    StorageLocation             : String(10) @title : '{i18n>XLBL_STORLOC}';
-    MaterialGroup               : String(20) @title : '{i18n>XLBL_MATGROUP}';
-    Purchasinginforec         : String(20) @title : '{i18n>XLBL_PURINFO}';
+    Plant                       : String(10) @title : '{i18n>XLBL_PLANT}';
+    StorageLocation              : String(10) @title : '{i18n>XLBL_STORLOC}';
+    MaterialGroup                : String(20) @title : '{i18n>XLBL_MATGROUP}';
+    Purchasinginforec            : String(20) @title : '{i18n>XLBL_PURINFO}';
 
-    OrderQuantity               : String(50) @title : '{i18n>XLBL_ORDQTY}';
-    OrderUnit                   : String(10) @title : '{i18n>XLBL_ORDUNIT}';
-    OrderPriceUnit             : String(10) @title : '{i18n>XLBL_ORDPRICEUNIT}';
+    OrderQuantity                : String(50) @title : '{i18n>XLBL_ORDQTY}';
+    OrderUnit                    : String(10) @title : '{i18n>XLBL_ORDUNIT}';
+    OrderPriceUnit                : String(10) @title : '{i18n>XLBL_ORDPRICEUNIT}';
 
-    QuantityConversion          : String(50) @title : '{i18n>XLBL_QTYCONV}';
-    QuantityConversion1        : String(50) @title : '{i18n>XLBL_QTYCONV1}';
+    QuantityConversion            : String(50) @title : '{i18n>XLBL_QTYCONV}';
+    QuantityConversion1           : String(50) @title : '{i18n>XLBL_QTYCONV1}';
 
-    EqualTo                     : String(20) @title : '{i18n>XLBL_EQUALTO}';
-    Denominator                  : String(20) @title : '{i18n>XLBL_DENOMINATOR}';
+    EqualTo                      : String(20) @title : '{i18n>XLBL_EQUALTO}';
+    Denominator                   : String(20) @title : '{i18n>XLBL_DENOMINATOR}';
 
-    NetOrderPrice            : String(50) @title : '{i18n>XLBL_NETORDPRICE}';
-    Priceunit                   : String(50)    @title : '{i18n>XLBL_PRICEUNIT}';
+    NetOrderPrice                 : String(50) @title : '{i18n>XLBL_NETORDPRICE}';
+    Priceunit                     : String(50) @title : '{i18n>XLBL_PRICEUNIT}';
 
-    NetOrderValue              : String(50) @title : '{i18n>XLBL_NETORDVALUE}';
-    Grossordervalue            : String(50) @title : '{i18n>XLBL_GROSSORDERVALUE}';
+    NetOrderValue                 : String(50) @title : '{i18n>XLBL_NETORDVALUE}';
+    Grossordervalue                : String(50) @title : '{i18n>XLBL_GROSSORDERVALUE}';
 
-    GRprocessingtime           : String(50) @title : '{i18n>XLBL_GRPROCTIME}';
-    TaxCode                     : String(10) @title : '{i18n>XLBL_TAXCODE}';
-    InfoRecordUpdate           : String(10) @title : '{i18n>XLBL_INFORECUPD}';
-    PrintPrice                  : String(10) @title : '{i18n>XLBL_PRINTPRICE}';
+    GRprocessingtime               : String(50) @title : '{i18n>XLBL_GRPROCTIME}';
+    TaxCode                        : String(10) @title : '{i18n>XLBL_TAXCODE}';
+    InfoRecordUpdate                : String(10) @title : '{i18n>XLBL_INFORECUPD}';
+    PrintPrice                     : String(10) @title : '{i18n>XLBL_PRINTPRICE}';
 
-    fstReminderExped          : String(20) @title : '{i18n>XLBL_FSTREMINDER}';
-    sndReminderExped          : String(20) @title : '{i18n>XLBL_SNDREMINDER}';
-    trdReminderExped          : String(20) @title : '{i18n>XLBL_TRDREMINDER}';
+    fstReminderExped               : String(20) @title : '{i18n>XLBL_FSTREMINDER}';
+    sndReminderExped               : String(20) @title : '{i18n>XLBL_SNDREMINDER}';
+    trdReminderExped               : String(20) @title : '{i18n>XLBL_TRDREMINDER}';
 
-    UnltdOverdelivery           : String(5) @title : '{i18n>XLBL_UNLTDOVERDEL}';
-    DeliveryCompleted           : String(5) @title : '{i18n>XLBL_DELIVCOMPLETE}';
+    UnltdOverdelivery              : String(5) @title : '{i18n>XLBL_UNLTDOVERDEL}';
+    DeliveryCompleted               : String(5) @title : '{i18n>XLBL_DELIVCOMPLETE}';
 
-    ItemCategory                : String(10)    @title : '{i18n>XLBL_ITEMCAT}';
-    AcctAssignmentCat         : String(10)   @title : '{i18n>XLBL_ACCTASSCAT}';
-    Consumption                  : String(10) @title : '{i18n>XLBL_CONSUMPTION}';
-    GoodsReceipt               : String(10) @title : '{i18n>XLBL_GOODSRECEIPT}';
-    InvoiceReceipt              : String(10) @title : '{i18n>XLBL_INVRECEIPT}';
-    GRBasedInvVerif        : String(10) @title : '{i18n>XLBL_GRBASEDINVVERIF}';
+    ItemCategory                   : String(10) @title : '{i18n>XLBL_ITEMCAT}';
+    AcctAssignmentCat                : String(10) @title : '{i18n>XLBL_ACCTASSCAT}';
+    Consumption                     : String(10) @title : '{i18n>XLBL_CONSUMPTION}';
+    GoodsReceipt                   : String(10) @title : '{i18n>XLBL_GOODSRECEIPT}';
+    InvoiceReceipt                  : String(10) @title : '{i18n>XLBL_INVRECEIPT}';
+    GRBasedInvVerif              : String(10) @title : '{i18n>XLBL_GRBASEDINVVERIF}';
 
-    BaseUnitofMeasure         : String(10)  @title : '{i18n>XLBL_BASEUNIT}';
+    BaseUnitofMeasure                : String(10) @title : '{i18n>XLBL_BASEUNIT}';
 
-    PriceDate                   : String(50) @title : '{i18n>XLBL_PRICEDATE}';
+    PriceDate                      : String(50) @title : '{i18n>XLBL_PRICEDATE}';
 
-    PurchDocCategory         : String(10) @title : '{i18n>XLBL_PURDOCCAT}'  ;
+    PurchDocCategory                : String(10) @title : '{i18n>XLBL_PURDOCCAT}';
 
-    Effectivevalue           : String(50)       @title : '{i18n>XLBL_EFFECTIVEVALUE}';
-    Affectscommitments          : String(10) @title : '{i18n>XLBL_AFFECTSCOMMITMENTS}';
+    Effectivevalue                  : String(50) @title : '{i18n>XLBL_EFFECTIVEVALUE}';
+    Affectscommitments               : String(10) @title : '{i18n>XLBL_AFFECTSCOMMITMENTS}';
 
-    Address                      : String(50) @title : '{i18n>XLBL_ADDR}';
+    Address                        : String(50) @title : '{i18n>XLBL_ADDR}';
 
-    UpdateGroupstats         : String(20) @title : '{i18n>XLBL_UPDATEGROUPSTATS}';
+    UpdateGroupstats                : String(20) @title : '{i18n>XLBL_UPDATEGROUPSTATS}';
 
-    PlannedDelivTime          : String(50) @title : '{i18n>XLBL_PLANNEDDELIVTIME}';
+    PlannedDelivTime                : String(50) @title : '{i18n>XLBL_PLANNEDDELIVTIME}';
 
-    NetWeight                   : String(50) @title : '{i18n>XLBL_NETWEIGHT}';
-    UnitofWeight             : String(10) @title : '{i18n>XLBL_UNITOFWEIGHT}';
+    NetWeight                      : String(50) @title : '{i18n>XLBL_NETWEIGHT}';
+    UnitofWeight                   : String(10) @title : '{i18n>XLBL_UNITOFWEIGHT}';
 
-    TaxJurisdiction          : String(20)   @title : '{i18n>XLBL_TAXJURISDICTION}';
+    TaxJurisdiction                 : String(20) @title : '{i18n>XLBL_TAXJURISDICTION}';
 
-    ConfirmationControl         : String(20) @title : '{i18n>XLBL_CONFIRMATIONCONTROL}';
+    ConfirmationControl              : String(20) @title : '{i18n>XLBL_CONFIRMATIONCONTROL}';
 
-    ProfitCenter                : String(20) @title : '{i18n>XLBL_PROFITCENTER}';
+    ProfitCenter                    : String(20) @title : '{i18n>XLBL_PROFITCENTER}';
 
-    GrossWeight                 : String(50) @title : '{i18n>XLBL_GROSSWEIGHT}';
+    GrossWeight                     : String(50) @title : '{i18n>XLBL_GROSSWEIGHT}';
 
-    Volume                    :String(50) @title : '{i18n>XLBL_VOLUME}';
+    Volume                         : String(50) @title : '{i18n>XLBL_VOLUME}';
 
-    VolumeUnit                : String(10) @title : '{i18n>XLBL_VOLUMEUNIT}';
+    VolumeUnit                     : String(10) @title : '{i18n>XLBL_VOLUMEUNIT}';
 
-    Packagenumber               : String(20) @title : '{i18n>XLBL_PACKAGENUMBER}';
+    Packagenumber                   : String(20) @title : '{i18n>XLBL_PACKAGENUMBER}';
 
-    Address1           : String(50) @title : '{i18n>XLBL_ADDRESS1}';
+    Address1                       : String(50) @title : '{i18n>XLBL_ADDRESS1}';
 
-    TimeofTransmission      : String(20) @title : '{i18n>XLBL_TIMEOFTRANS}';
+    TimeofTransmission               : String(20) @title : '{i18n>XLBL_TIMEOFTRANS}';
 
-    NextTransmissionNumber     : String(20) @title : '{i18n>XLBL_NEXTTRANSNUM}';
+    NextTransmissionNumber            : String(20) @title : '{i18n>XLBL_NEXTTRANSNUM}';
 
-    MatLedgerActive           : String(10) @title : '{i18n>XLBL_MATLEDGERACTIVE}';
+    MatLedgerActive                 : String(10) @title : '{i18n>XLBL_MATLEDGERACTIVE}';
 
-    MaterialType                : String(20) @title : '{i18n>XLBL_MATERIALTYPE}';
+    MaterialType                    : String(20) @title : '{i18n>XLBL_MATERIALTYPE}';
 
-    Subtotal3                  : String(50) @title : '{i18n>XLBL_SUBTOTAL3}';
+    Subtotal3                       : String(50) @title : '{i18n>XLBL_SUBTOTAL3}';
 
-    ReturnsItem                 : String(10) @title : '{i18n>XLBL_RETURNSITEM}';
+    ReturnsItem                     : String(10) @title : '{i18n>XLBL_RETURNSITEM}';
 
-    RebateBasis               : String(50) @title : '{i18n>XLBL_REBATEBASIS}';
+    RebateBasis                     : String(50) @title : '{i18n>XLBL_REBATEBASIS}';
 
-    Recloctimezone         : String(20) @title : '{i18n>XLBL_RECLOCTIMEZONE}';
+    Recloctimezone                  : String(20) @title : '{i18n>XLBL_RECLOCTIMEZONE}';
 
-    PeriodIndforSLED         : String(10) @title : '{i18n>XLBL_PERIODINDFORSLED}';
+    PeriodIndforSLED                : String(10) @title : '{i18n>XLBL_PERIODINDFORSLED}';
 
-    MRPArea                 : String(20) @title : '{i18n>XLBL_MRPAREA}';
+    MRPArea                         : String(20) @title : '{i18n>XLBL_MRPAREA}';
 
-    CreationDate                : String(50) @title : '{i18n>XLBL_CREATIONDATE}';
+    CreationDate                    : String(50) @title : '{i18n>XLBL_CREATIONDATE}';
 
-    CreationTime             : String(20) @title : '{i18n>XLBL_CREATIONTIME}';
+    CreationTime                    : String(20) @title : '{i18n>XLBL_CREATIONTIME}';
 
-    ProductTypeGroup           : String(50) @title : '{i18n>XLBL_PRODUCTTYPEGROUP}';
+    ProductTypeGroup                : String(50) @title : '{i18n>XLBL_PRODUCTTYPEGROUP}';
 }

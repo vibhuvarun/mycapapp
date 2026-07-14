@@ -1,20 +1,19 @@
 {
   "generationParameters": {
-    "generationDate": "Tue Jun 09 2026 16:59:00 GMT+0000 (Coordinated Universal Time)",
+    "generationDate": "Mon Jul 13 2026 10:07:06 GMT+0000 (Coordinated Universal Time)",
     "generatorPlatform": "SAP Business Application Studio",
     "serviceType": "Local CAP",
     "metadataFilename": "",
     "serviceUrl": "http://localhost:4004/odata/v4/catalog-service2/",
-    "appName": "poproject2",
-    "appTitle": "PO app",
-    "appDescription": "An SAP Fiori application.",
+    "appName": "managepo",
+    "appTitle": "Manage PO",
     "appNamespace": "vibhu.po",
     "ui5Theme": "sap_horizon",
-    "ui5Version": "1.148.1",
+    "ui5Version": "1.150.0",
     "enableEslint": true,
     "enableTypeScript": false,
     "showMockDataInfo": false,
-    "generatorVersion": "1.25.0",
+    "generatorVersion": "1.28.0",
     "template": "List Report Page V4",
     "generatorName": "SAP Fiori Application Generator",
     "entityRelatedConfig": [
@@ -23,6 +22,6 @@
         "value": "PurchaseOrders"
       }
     ],
-    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/vibhu.po.poproject2/index.html"
+    "launchText": "To launch the generated app, start your CAP project:  and navigate to the following location in your browser:\n\nhttp://localhost:4004/vibhu.po.managepo/index.html"
   }
 }
