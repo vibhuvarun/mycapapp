@@ -325,9 +325,3 @@ annotate service.PurchaseOrders with @(
         },
     ],
 );
-annotate service.PurchaseOrders@(
-    odata.draft.enabled
-)with PurchasingDocument@(
-    common.Text
-
-
