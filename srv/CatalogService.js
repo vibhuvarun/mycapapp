@@ -20,3 +20,18 @@
 //     });
 
 // });
+
+
+const cds = require('@sap/cds');
+
+module.exports = cds.service.impl(async function() {
+    // Get the PurchaseOrders entity
+    const { PurchaseOrders } = this.entities;
+
+    // Implementation for getDummy function
+    this.on('getDummy', () => {
+        return "Hello from getDummy!";
+    });
+
+    console.log('CatalogService initialized successfully!');
+});

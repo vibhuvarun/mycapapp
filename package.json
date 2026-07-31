@@ -19,8 +19,8 @@
     "watch-managepo": "cds watch --open vibhu.po.managepo/index.html?sap-ui-xx-viewCache=false --livereload false",
     "undeploy": "cf undeploy mycapapp --delete-services --delete-service-keys --delete-service-brokers",
     "build": "rimraf resources mta_archives && mbt build --mtar archive",
-    "deploy": "cf deploy mta_archives/archive.mtar --retries 1",
-    "watch-poproject2": "cds watch --open vibhu.po.poproject2/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "deploy": "cf deploy mta_archives/archive.mtar --retries 1"
+  
   },
   "private": true,
   "cds": {
@@ -42,13 +42,11 @@
           "users": {
             "vibhu": {
               "roles": [
-                "editor",
-                "viewer",
-                "display"
+                "Editor",
+                "Viewer",
+                "Admin"
               ],
               "userAttributes": {
-                "city": "Bangalore",
-                "department": "Sales"
               }
             },
             "varun": {}
@@ -62,7 +60,7 @@
   ],
   "sapux": [
     "app/managepo",
-    "app/poproject2",
+
     "app/managepo"
   ]
 }

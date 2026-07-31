@@ -1,4 +1,4 @@
-using CatalogService2 as service from '../../srv/CatalogService';
+using CatalogService as service from '../../srv/CatalogService';
 
 annotate service.PurchaseOrders with @(
     UI.SelectionFields: [

@@ -1,76 +1,52 @@
 {
-  "xsappname": "mycapapp",
+  "xsappname": "mycapapp-4c6a92b4trial-dev",
   "tenant-mode": "dedicated",
-  "xsenableasyncservice": true,
+
   "scopes": [
     {
-      "name": "$XSAPPNAME.Display",
-      "description": "Display "
+      "name": "$XSAPPNAME.Viewer",
+      "description": "Viewer Scope"
     },
     {
-      "name": "$XSAPPNAME.Edit",
-      "description": "Edit "
+      "name": "$XSAPPNAME.Editor",
+      "description": "Editor Scope"
     },
     {
-      "name": "$XSAPPNAME.Boost",
-      "description": "Boost"
+      "name": "$XSAPPNAME.Admin",
+      "description": "Admin Scope"
     }
   ],
-  "attributes": [
-    {
-      "name": "country",
-      "description": "Country attribute",
-      "valueType": "string"
-    },
-    {
-      "name": "city",
-      "description": "City attribute",
-      "valueType": "string"
-    }
-  ],
+
+  "attributes": [],
+
   "role-templates": [
     {
       "name": "Viewer",
-      "description": "Viewer role",
+      "description": "Viewer Role",
       "scope-references": [
-        "$XSAPPNAME.Display"
+        "$XSAPPNAME.Viewer"
       ]
     },
     {
-      "name": "User",
-      "description": "Normal user role",
+      "name": "Editor",
+      "description": "Editor Role",
       "scope-references": [
-        "$XSAPPNAME.Edit"
+        "$XSAPPNAME.Editor"
       ]
     },
     {
       "name": "Admin",
-      "description": "Administrator role",
+      "description": "Administrator Role",
       "scope-references": [
-        "$XSAPPNAME.Display",
-        "$XSAPPNAME.Edit",
-        "$XSAPPNAME.Boost"
-      ],
-      "attribute-references": [
-        {
-          "name": "country",
-          "default-value": [
-            "india"
-          ]
-        },
-        {
-          "name": "city",
-          "default-value": [
-            "*"
-          ]
-        }
+        "$XSAPPNAME.Admin"
       ]
     }
   ],
+
   "oauth2-configuration": {
     "token-validity": 3600,
     "redirect-uris": [
-      "https://*.cfapps.us10-001.hana.ondemand.com/login/callback/"
+      "https://*.cfapps.us10-001.hana.ondemand.com/**"
     ]
   }
 }

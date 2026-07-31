@@ -22,15 +22,13 @@
 
 using { vibhuvarun2.db as db } from '../db/data-models';
 
-service CatalogService2 {
-
+service CatalogService @(path : 'catalog', require : 'authenticated-user') {
     entity PurchaseOrders
     @(restrict:[
-        {
-          grant: 'Display',
-          where: 'createdBy = $user.id'
-        }
+      { grant: ['READ'], to: 'Viewer' },
+        { grant: ['READ','UPDATE'], to: 'Editor' },
+        { grant: ['*'], to: 'Admin' }
     ])
-        as projection on db.PurchaseOrder;
-        function getDummy() returns String;
+    as projection on db.PurchaseOrder;
+    function getDummy() returns String;
 }

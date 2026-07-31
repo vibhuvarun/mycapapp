@@ -1,5 +1,5 @@
 {
- "welcomeFile": "/webapp/index.html",
+ "welcomeFile": "/webapp/",
  "authenticationMethod": "route",
  "sessionTimeout": 100,
  "routes": [
@@ -10,7 +10,7 @@
    "authenticationType": "xsuaa"
   },
   {
-   "source": "^(.*)$",
+   "source": "^/(.*)$",
    "destination": "srv-api",
    "authenticationType": "xsuaa"
   }

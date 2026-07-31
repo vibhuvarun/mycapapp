@@ -1,38 +1,38 @@
 ### Get the service document
-http://localhost:4004c
+http://localhost:4004
 Authorization: Basic vibhu:
 
 ### Get metadata of CatalogService2
-http://localhost:4004/odata/v4/CatalogService/$metadata
+http://localhost:4004/odata/v4/catalog/$metadata
 
 ### Get all Purchase Orders
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders
+http://localhost:4004/odata/v4/catalog/PurchaseOrders
 Authorization: Basic vibhu:
 
 ### Get count of Purchase Orders
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders/$count
+http://localhost:4004/odata/v4/catalog/PurchaseOrders/$count
 
 ### Pagination - $top and $skip
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$top=5&$skip=10
+http://localhost:4004/odata/v4/catalog/PurchaseOrders?$top=5&$skip=10
 
 ### Select specific fields
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$select=PurchasingDocument,Item,ShortText,Material,NetOrderValue
+http://localhost:4004/odata/v4/catalog/PurchaseOrders?$select=PurchasingDocument,Item,ShortText,Material,NetOrderValue
 
 ### Filter by CompanyCode
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$filter=CompanyCode eq '1000'
+http://localhost:4004/odata/v4/catalog/PurchaseOrders?$filter=CompanyCode eq '1000'
 
 ### Filter by Plant and Material
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders?$filter=Plant eq '1010' and Material eq 'MAT-001'
+http://localhost:4004/odata/v4/catalog/PurchaseOrders?$filter=Plant eq '1010' and Material eq 'MAT-001'
 
 ### Get single Purchase Order by composite key (PurchasingDocument + Item)
-http://localhost:4004/odata/v4/CatalogService/PurchaseOrders(PurchasingDocument='4500000123',Item='00010')
+http://localhost:4004/odata/v4/catalog/PurchaseOrders(PurchasingDocument='4500000123',Item='00010')
 Authorization: Basic vibhu:
 
 ### Call the custom function getDummy
-http://localhost:4004/odata/v4/CatalogService/getDummy()
+http://localhost:4004/odata/v4/catalog/getDummy()
 
 ### POST to create new Purchase Order
-POST http://localhost:4004/odata/v4/CatalogService/PurchaseOrders
+POST http://localhost:4004/odata/v4/catalog/PurchaseOrders
 Authorization: Basic vibhu:
 Content-Type: application/json
 
